@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { API } from "../configs/api";
+import { Pokemon } from "../@types/pokemon";
 
 async function getPokemonPage() {
   //Api
@@ -13,7 +14,7 @@ async function getPokemonPage() {
 
   const pokemonData = await Promise.all(pokemonPromises);
   
-  return pokemonData;
+  return pokemonData as Pokemon[];
 }
 
 export function useQueryPokemonPage() {

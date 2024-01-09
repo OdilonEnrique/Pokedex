@@ -1,8 +1,3 @@
-=> Reprograma Jucás <=
-https://emanuelquintino.github.io/Page-WDC/
-
-=> Pokemon Types <=
-
 import { AppTheme } from "./styles";
 
 export type PokemonType = keyof AppTheme["colors"]["types"];
@@ -31,9 +26,3 @@ export type Pokemon = {
     };
   };
 };
-
-=> Vercel <=
-
-{
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
-}
