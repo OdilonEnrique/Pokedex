@@ -24,40 +24,41 @@ export const Container = styled.header`
     margin-top: 0.8rem;
   }
 
-  input{
+  input {
     font-size: 1.2rem;
     border-radius: 0.8rem;
     padding: 0.8rem 1.6rem;
     box-shadow: 1px 1px 2px 0px #0008;
   }
 
-  button{
+  button {
     font-size: 1.2rem;
     border-radius: 0.8rem;
     padding: 0.8rem 1.6rem;
     font-weight: 700;
-    background: ${({theme}) => theme.colors.complementary};
-    color: ${({theme}) => theme.colors.light};
+    background: ${({ theme }) => theme.colors.complementary};
+    color: ${({ theme }) => theme.colors.light};
+    box-shadow: 1px 1px 2px 0px #0008;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(1.05);
+    }
   }
 
-  &:hover {
-    cursor: pointer;
-    filter: brightness(1.05);
-  }
-
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     flex-direction: row;
     padding: 2.4rem 3.2rem;
 
-    img{
+    img {
       width: 20rem;
     }
 
-    input{
+    input {
       font-size: 1.6rem;
     }
 
-    button{
+    button {
       font-size: 1.6rem;
     }
   }

@@ -38,18 +38,18 @@ export const Container = styled.div`
     padding: 2.4rem;
     min-width: 22rem;
     min-height: 28rem;
-  }
 
-  img {
-    width: 16rem;
-  }
+    img {
+      width: 16rem;
+    }
 
-  strong {
-    font-size: 1.6rem;
-  }
+    strong {
+      font-size: 1.6rem;
+    }
 
-  .boxTypes {
-    gap: 0.8rem;
-    margin-top: 1.2rem;
+    .boxTypes {
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
   }
 `;
